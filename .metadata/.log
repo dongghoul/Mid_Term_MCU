@@ -1,0 +1,36 @@
+!SESSION 2022-11-05 16:49:45.182 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-11-05 16:50:08.350
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-11-05 16:50:08.450
+!MESSAGE Log4j initialized with config file D:\University of Technology\Microcontroller - Microproccesor\MidTerm\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-11-05 16:50:12.275
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-11-05 16:53:17.014 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-11-05 16:53:29.483
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-11-05 16:53:29.603
+!MESSAGE Log4j initialized with config file D:\University of Technology\Microcontroller - Microproccesor\MidTerm\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-11-05 16:53:34.765
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-05 16:53:52.663
+!MESSAGE Indexed 'Mid_Semester_Exam' (24 sources, 101 headers) in 4.27 sec: 7,501 declarations; 34,903 references; 6 unresolved inclusions; 295 syntax errors; 1,122 unresolved names (2.6%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-05 16:54:07.958
+!MESSAGE Indexed 'MidTerm' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

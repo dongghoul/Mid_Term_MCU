@@ -1,0 +1,2 @@
+output_display.c:10:6:display7SEG	16	static
+output_display.c:66:6:blinkingLedRed	8	static

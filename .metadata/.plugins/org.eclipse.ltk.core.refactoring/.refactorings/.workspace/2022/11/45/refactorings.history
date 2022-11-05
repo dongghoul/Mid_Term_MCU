@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Mid_Semester_Exam&apos; to &apos;MidTerm&apos;" description="Rename resource &apos;Mid_Semester_Exam&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Mid_Semester_Exam" name="MidTerm" stamp="1667642047712" updateReferences="true"/>
+</session>

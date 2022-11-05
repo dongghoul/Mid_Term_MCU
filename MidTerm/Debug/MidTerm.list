@@ -39,9 +39,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_line   0000a9fd  00000000  00000000  00042237  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00082180  00000000  00000000  0004cc34  2**0
+ 18 .debug_str    00082181  00000000  00000000  0004cc34  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000cedb4  2**0
+ 19 .comment      00000053  00000000  00000000  000cedb5  2**0
                   CONTENTS, READONLY
  20 .debug_frame  00002804  00000000  00000000  000cee08  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -179,7 +179,7 @@ void fsm_simple_buttons_run(void){
  80001ec:	2200      	movs	r2, #0
  80001ee:	601a      	str	r2, [r3, #0]
 			setTimerTimeOut(TIME_OUT_DURATION);
- 80001f0:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 80001f0:	f242 7010 	movw	r0, #10000	; 0x2710
  80001f4:	f000 fc32 	bl	8000a5c <setTimerTimeOut>
 		}
 		if(is_button_pressed(INC_BUTTON)){
@@ -195,7 +195,7 @@ void fsm_simple_buttons_run(void){
 			increaseCounter();
  800020a:	f7ff ff9f 	bl	800014c <increaseCounter>
 			setTimerTimeOut(TIME_OUT_DURATION);
- 800020e:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 800020e:	f242 7010 	movw	r0, #10000	; 0x2710
  8000212:	f000 fc23 	bl	8000a5c <setTimerTimeOut>
 		}
 		if(is_button_pressed(DEC_BUTTON)){
@@ -211,7 +211,7 @@ void fsm_simple_buttons_run(void){
 			decreaseCounter();
  8000228:	f7ff ffa6 	bl	8000178 <decreaseCounter>
 			setTimerTimeOut(TIME_OUT_DURATION);
- 800022c:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 800022c:	f242 7010 	movw	r0, #10000	; 0x2710
  8000230:	f000 fc14 	bl	8000a5c <setTimerTimeOut>
 		}
 		if (timerTimeOut_flag == 1){
@@ -277,7 +277,7 @@ void fsm_simple_buttons_run(void){
  8000290:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  8000294:	f000 fbc6 	bl	8000a24 <setTimerPressed3s>
 				setTimerTimeOut(TIME_OUT_DURATION);
- 8000298:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 8000298:	f242 7010 	movw	r0, #10000	; 0x2710
  800029c:	f000 fbde 	bl	8000a5c <setTimerTimeOut>
 		break;
  80002a0:	e084      	b.n	80003ac <fsm_simple_buttons_run+0x208>
@@ -315,7 +315,7 @@ void fsm_simple_buttons_run(void){
  80002cc:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  80002d0:	f000 fba8 	bl	8000a24 <setTimerPressed3s>
 				setTimerTimeOut(TIME_OUT_DURATION);
- 80002d4:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 80002d4:	f242 7010 	movw	r0, #10000	; 0x2710
  80002d8:	f000 fbc0 	bl	8000a5c <setTimerTimeOut>
 		break;
  80002dc:	e068      	b.n	80003b0 <fsm_simple_buttons_run+0x20c>
@@ -346,7 +346,7 @@ void fsm_simple_buttons_run(void){
 		break;
  8000304:	e055      	b.n	80003b2 <fsm_simple_buttons_run+0x20e>
 		else setTimerTimeOut(TIME_OUT_DURATION);
- 8000306:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 8000306:	f242 7010 	movw	r0, #10000	; 0x2710
  800030a:	f000 fba7 	bl	8000a5c <setTimerTimeOut>
 		break;
  800030e:	e050      	b.n	80003b2 <fsm_simple_buttons_run+0x20e>
@@ -377,7 +377,7 @@ void fsm_simple_buttons_run(void){
 		break;
  8000336:	e03c      	b.n	80003b2 <fsm_simple_buttons_run+0x20e>
 		else setTimerTimeOut(TIME_OUT_DURATION);
- 8000338:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 8000338:	f242 7010 	movw	r0, #10000	; 0x2710
  800033c:	f000 fb8e 	bl	8000a5c <setTimerTimeOut>
 		break;
  8000340:	e037      	b.n	80003b2 <fsm_simple_buttons_run+0x20e>
@@ -416,7 +416,7 @@ void fsm_simple_buttons_run(void){
 			increaseCounter();
  8000376:	f7ff fee9 	bl	800014c <increaseCounter>
 			setTimerTimeOut(TIME_OUT_DURATION);
- 800037a:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 800037a:	f242 7010 	movw	r0, #10000	; 0x2710
  800037e:	f000 fb6d 	bl	8000a5c <setTimerTimeOut>
 		}
 		if(is_button_pressed(DEC_BUTTON)){
@@ -432,7 +432,7 @@ void fsm_simple_buttons_run(void){
 			decreaseCounter();
  8000394:	f7ff fef0 	bl	8000178 <decreaseCounter>
 			setTimerTimeOut(TIME_OUT_DURATION);
- 8000398:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 8000398:	f242 7010 	movw	r0, #10000	; 0x2710
  800039c:	f000 fb5e 	bl	8000a5c <setTimerTimeOut>
 		}
 	default:
@@ -724,7 +724,7 @@ int main(void)
  8000566:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
  800056a:	f000 fa3f 	bl	80009ec <setTimerBlinkingLedRed>
   setTimerTimeOut(TIME_OUT_DURATION);
- 800056e:	f640 30b8 	movw	r0, #3000	; 0xbb8
+ 800056e:	f242 7010 	movw	r0, #10000	; 0x2710
  8000572:	f000 fa73 	bl	8000a5c <setTimerTimeOut>
 
   /* Infinite loop */

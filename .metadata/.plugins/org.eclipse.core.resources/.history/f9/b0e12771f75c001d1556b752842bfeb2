@@ -9,8 +9,8 @@
 #include "main.h"
 //we aim to work with more than one buttons
 #define N0_OF_BUTTONS 				       3
-//timer interrupt duration is 10ms, so to pass 3 second,
-//we need to jump to the interrupt service routine 300 time
+//timer interrupt duration is 10ms, so to pass 1 second,
+//we need to jump to the interrupt service routine 100 time
 #define DURATION_FOR_AUTO_INCREASING	   300
 #define BUTTON_IS_PRESSED                  GPIO_PIN_RESET
 #define BUTTON_IS_RELEASED                 GPIO_PIN_SET
@@ -21,10 +21,10 @@ static GPIO_PinState buttonBuffer[N0_OF_BUTTONS];
 static GPIO_PinState debounceButtonBuffer1[N0_OF_BUTTONS];
 static GPIO_PinState debounceButtonBuffer2[N0_OF_BUTTONS];
 static GPIO_PinState debounceButtonBuffer3[N0_OF_BUTTONS];
-//we define a flag for a button pressed more than 3 second.
+//we define a flag for a button pressed more than 1 second.
 static uint8_t flagForButtonPress3s[N0_OF_BUTTONS];
 //we define counter for automatically increasing the value
-//after the button is pressed more than 3 second.
+//after the button is pressed more than 1 second.
 static uint16_t counterForButtonPress3s[N0_OF_BUTTONS];
 
 GPIO_TypeDef* buttonPortNumber[N0_OF_BUTTONS] = {BUTTON1_GPIO_Port

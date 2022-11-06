@@ -1,6 +1,6 @@
-timer.c:23:6:setTimerBlinkingLedRed	16	static
-timer.c:28:6:setTimerPressed3s	16	static
-timer.c:33:6:setTimerTimeOut	16	static
-timer.c:38:6:setTimerCountDown	16	static
-timer.c:43:6:setTimer5	16	static
-timer.c:48:6:timerRun	4	static
+timer.c:21:6:setTimerBlinkingLedRed	16	static
+timer.c:26:6:setTimerPressed3s	16	static
+timer.c:31:6:setTimerTimeOut	16	static
+timer.c:36:6:setTimerCountDown	16	static
+timer.c:41:6:setTimer5	16	static
+timer.c:46:6:timerRun	4	static

@@ -48,6 +48,7 @@ void button_reading(void){
 				//the flag is turned on when 3 second has passed
 				//since the button is pressed.
 					flagForButtonPress3s[i] = 1;
+					//todo
 				}
 			} else {
 				counterForButtonPress3s[i] = 0;

@@ -7,6 +7,8 @@
 
 #include "timer.h"
 
+#define TIMER_CYCLE 10
+
 int timerBlinkingLedRed_flag = 0;
 int timerBlinkingLedRed_counter = 0;
 int timerPressed3s_flag = 0;

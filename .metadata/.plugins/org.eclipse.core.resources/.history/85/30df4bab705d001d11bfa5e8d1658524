@@ -8,9 +8,6 @@
 #ifndef INC_INPUT_READING_H_
 #define INC_INPUT_READING_H_
 
-#include "main.h"
-#include "global.h"
-
 #define RESET_BUTTON 0
 #define INC_BUTTON 1
 #define DEC_BUTTON 2

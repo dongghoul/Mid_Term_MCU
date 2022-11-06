@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00020024  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00008d03  00000000  00000000  0002004d  2**0
+ 12 .debug_info   00008d56  00000000  00000000  0002004d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 0000192d  00000000  00000000  00028d50  2**0
+ 13 .debug_abbrev 0000193a  00000000  00000000  00028da3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000a18  00000000  00000000  0002a680  2**3
+ 14 .debug_aranges 00000a18  00000000  00000000  0002a6e0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000918  00000000  00000000  0002b098  2**3
+ 15 .debug_ranges 00000918  00000000  00000000  0002b0f8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00016887  00000000  00000000  0002b9b0  2**0
+ 16 .debug_macro  000168b9  00000000  00000000  0002ba10  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000a9fd  00000000  00000000  00042237  2**0
+ 17 .debug_line   0000aa27  00000000  00000000  000422c9  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00082181  00000000  00000000  0004cc34  2**0
+ 18 .debug_str    00082190  00000000  00000000  0004ccf0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000cedb5  2**0
+ 19 .comment      00000053  00000000  00000000  000cee80  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00002804  00000000  00000000  000cee08  2**2
+ 20 .debug_frame  00002804  00000000  00000000  000ceed4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -579,7 +579,6 @@ void button_reading(void){
  8000492:	2201      	movs	r2, #1
  8000494:	701a      	strb	r2, [r3, #0]
  8000496:	e009      	b.n	80004ac <button_reading+0xe0>
-					//todo
 				}
 			} else {
 				counterForButtonPress3s[i] = 0;

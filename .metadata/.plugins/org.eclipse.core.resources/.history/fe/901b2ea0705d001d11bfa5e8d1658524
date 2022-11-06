@@ -6,16 +6,18 @@
  */
 
 
-#include "input_reading.h"
-
+#include "main.h"
+//we aim to work with more than one buttons
 #define N0_OF_BUTTONS 				       3
-#define DURATION_FOR_AUTO_INCREASING	   3000 / TIMER_CYCLE
+//timer interrupt duration is 10ms, so to pass 3 second,
+//we need to jump to the interrupt service routine 300 time
+#define DURATION_FOR_AUTO_INCREASING	   300
 #define BUTTON_IS_PRESSED                  GPIO_PIN_RESET
 #define BUTTON_IS_RELEASED                 GPIO_PIN_SET
 //the buffer that the final result is stored after
 //debouncing
 static GPIO_PinState buttonBuffer[N0_OF_BUTTONS];
-//we define three buffers for debouncing
+//we define two buffers for debouncing
 static GPIO_PinState debounceButtonBuffer1[N0_OF_BUTTONS];
 static GPIO_PinState debounceButtonBuffer2[N0_OF_BUTTONS];
 static GPIO_PinState debounceButtonBuffer3[N0_OF_BUTTONS];
@@ -48,6 +50,7 @@ void button_reading(void){
 				//the flag is turned on when 3 second has passed
 				//since the button is pressed.
 					flagForButtonPress3s[i] = 1;
+					//todo
 				}
 			} else {
 				counterForButtonPress3s[i] = 0;

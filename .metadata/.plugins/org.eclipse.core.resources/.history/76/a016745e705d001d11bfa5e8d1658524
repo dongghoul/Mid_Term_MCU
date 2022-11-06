@@ -8,8 +8,6 @@
 #ifndef INC_TIMER_H_
 #define INC_TIMER_H_
 
-#define TIMER_CYCLE 10
-
 extern int timerBlinkingLedRed_flag;
 extern int timerPressed3s_flag;
 extern int timerTimeOut_flag;
